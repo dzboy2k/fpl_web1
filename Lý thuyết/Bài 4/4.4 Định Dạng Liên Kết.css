@@ -1,0 +1,25 @@
+/* 
+Định dạng liên kết
+    - a{}: chọn tất cả các thẻ a
+    - a:link{}: Chọn tất cả các liên kết ở trạng thái bình thường (chưa click)
+    - a:visited{}: Chọn tất cả các liên kết ở trạng thái đã thăm (đã click)
+    - a:active{}: Chọn tất cả các liên kết ở trạng thái tích cực (đang được chọn)
+    - a:hover{}: Chọn tất cả thẻ liên kết ở trạng thái có chuột (đang đưa chuột lên)
+*/
+a{
+    font-variant: small-caps;
+    text-decoration: none;
+}
+a:link{
+    color: blue;
+}
+a:active{
+    color: orangered;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}

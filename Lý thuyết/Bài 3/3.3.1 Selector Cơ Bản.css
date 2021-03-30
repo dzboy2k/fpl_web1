@@ -1,0 +1,22 @@
+/* 
+    CSS Selector: Bộ chọn CSS 
+    HTML Selector: Chọn thẻ theo tên. 
+        h1{} : Chọn tất cả thẻ h1
+    Class Selector: Chọn các thẻ theo thuộc tính @class
+        .abc{}: Chọn tất cả thẻ có dạng <tag class="abc">
+    ID Selector: Chọn các thẻ theo thuộc tính @id
+        #abc{}: Chọn thẻ có dạng <tag id="xyz">
+*/
+
+/* HTML Selector */
+h1{
+    color: red;
+}
+/* Class Selector */
+.my-class{
+    color: blue;
+}
+/* ID Selector */
+#my-id{
+    color: green;
+}

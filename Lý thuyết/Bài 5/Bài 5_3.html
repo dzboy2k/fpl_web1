@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví Dụ Về Border</title>
+    <style>
+        /* 
+        Border: Định nghĩa 4 đường bao xung quanh
+            - border <width: độ dày> <style: kiểu đường bao(solid,double,dotted,dashed...)> <color:màu>
+            VD: border: 5px double red;
+            - Sử dụng border-width, border-style,border-color để định nghĩa giá trị từng thuộc tính riêng.
+                + border-width:5px;
+                + border-style:double;
+                + border-color:red;
+        - Định nghĩa từng đường bao riêng lẻ:
+            + border-top: <width> <style> <color>;
+            + border-right: <width> <style> <color>;
+            + border-bottom: <width> <style> <color>;
+            + border-left: <width> <style> <color>;
+            VD: border-top: 5px dotted red;
+        - Định nghĩa giá trị từng thuộc tính riêng lẻ:
+            + border-<top|left|right|bottom>-width: <width>
+            + border-<top|left|right|bottom>-style: <style>
+            + border-<top|left|right|bottom>-color: <color>
+            VD:
+                border-top-width:5px;
+                border-top-style:dotted;
+                border-top-color:red;
+        */
+
+        h1{
+            border-bottom: 1px dotted red;
+            color: orangered;
+        }
+        h3{
+            border: 1px dashed blue;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>FPT Polytechnic</h1>
+    <h3>Thực học - Thực nghiệp</h3>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cơ Chế Định Vị - Static</title>
+    <style>
+        /* 
+        Cơ chế định vị
+            - position: static: tĩnh(mặc định): định vị theo sự sắp xếp của HTML
+
+            - position: absolute: tuyệt đối: định vị tuyệt đối theo các thuộc tính css left, right, bottom, top so với màn hình hoặc thẻ chứa nếu chế độ định vị của thẻ chứa khác static.
+
+            - position: relative: tương đối: định vị tương đối theo các thuộc tính css left, right, bottom, top so với vị trí tự nhiên của html
+
+            - position: fixed: cố định khi cuộn màn hình: định vị cố định theo các thuộc tính css left, right, bottom, top so với màn hình hoặc thẻ chứa nếu chế độ định vị của thẻ chứa khác static
+        */
+        img{
+            width: 200px;
+            position: static; /* Tĩnh*/
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h2>FPT POLYTECHNIC</h2>
+    <img src="images/student.jpg" alt="">
+    <h2>Thực học - Thực nghiệp</h2>
+</body>
+</html>

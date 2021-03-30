@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Thiết Kế Menu Ngang</title>
+    <style>
+        /* Menu mẹ */
+        .hmenu{
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px orangered;
+            list-style: none;
+            background-color: orangered;
+            height: 40px;
+        }
+        ul.hmenu>li>a{
+            display: block;
+            line-height: 40px;
+            text-decoration: none;
+            font-variant: small-caps;
+            padding-left: 25px;
+            color: white;
+        }
+        ul.hmenu>li>a:hover{
+            color: yellow;
+            font-weight: bolder;
+        }
+        ul.hmenu>li{
+            float: left;
+            margin: 0 5px;
+            position: relative;
+        }
+        ul.hmenu>li:hover>.sub-menu{
+            display: block;
+        }
+        
+        /* Menu con */
+        .sub-menu{
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px orangered;
+            width: 150px;
+            position: absolute;
+            display: none;
+        }
+        .sub-menu>li>a{
+            display: block;
+            line-height: 30px;
+            border: 1px dotted orangered;
+            text-decoration: none;
+            font-variant: small-caps;
+            padding-left: 25px;
+            background: url(images/b1.jpg) no-repeat left center;
+            background-size: 20px 20px;
+            color: orangered;
+        }
+        .sub-menu>li>a:hover{
+            background: url(images/b2.jpg) no-repeat left center;
+            background-size: 20px 20px;
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <ul class="hmenu">
+        <li><a href="#1">Trang chủ</a></li>
+        <li><a href="#2">Giới Thiệu</a></li>
+            <!-- 
+                Thiết Kế Menu Con - Giải Pháp: 
+                    - sub-menu định vị tuyệt đối
+                    - <li> của hmenu định vị tương đối
+                    - sub-menu chỉ hiển thị khi đưa chuột lên <li> chứa nó
+            -->
+
+            <ul class="sub-menu">
+                <li><a href="#1">Trang chủ</a></li>
+                <li><a href="#2">Giới Thiệu</a></li>
+                <li><a href="#3">Liên hệ</a></li>
+                <li><a href="#4">Góp ý</a></li>
+                <li><a href="#5">Hỏi &amp; Đáp</a></li>
+            </ul>
+        <li><a href="#3">Liên hệ</a></li>
+        <li><a href="#4">Góp ý</a></li>
+        <li><a href="#5">Hỏi &amp; Đáp</a></li>
+    </ul>    
+</body>
+</html>

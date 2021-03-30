@@ -1,0 +1,16 @@
+/* 
+Các thuộc tính font
+    - font-family: font chữ
+    - font-size: kích thước font
+    - font-variant: small-caps; kiểu chữ hoa in nhỏ
+    - font-style: italic; kiểu chữ in nghiêng 
+    - font-weight: bold; kiểu chữ in đậm
+*/
+
+p.tho{
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+}

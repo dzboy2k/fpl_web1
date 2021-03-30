@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* reset margin padding mặc định của website về 0 */
+.header-top{
+    margin: auto;
+    width: 1000px;
+    background-color: #2f2f2f;
+    /* Quy định màu nền của phần tử html */
+}
+.header-top ul li{
+    list-style: none;       
+    /* xoá bỏ ký hiệu mặc định của thẻ */
+    display: inline-block;
+    /* quy định kiểu hiển thị của 1 phần tử */
+    margin: 10px;
+    /* khoảng cách giữa các phần tử */
+    padding-right: 10px;
+    /* padding: khoảng cách từ border của 1 phần tử tới nội dung */
+    border-right: 1px solid #ffffff;
+    /* border: đường viền của phần tử */
+}
+.header-top ul li:last-child{
+    border-right: none;
+}
+.header-top ul li a{
+    text-decoration: none;
+    /* xoá bỏ gạch chân của link */
+    color: #ffffff;
+    /* thay đổi màu của text */
+}
+.logo{
+    text-align: center;
+    /* căn chỉnh vị trí của 1 khối */
+    padding: 10px;
+}
+.menu{
+    margin: auto;
+    width: 960px;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content .banner{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content .product .product-heading{
+    width: 960px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.product-body{
+    width: 960px;
+    padding-top: 10px;
+    margin: auto;
+    display: grid;
+    /* quy định kiểu hiển thị của khối là dạng grid */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* định nghĩa số cột trong grid */
+    grid-gap: 20px;
+    /* khoảng cách giữa các cột trong grid */
+}
+.product-item{
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    grid-gap: 10px;
+}
+
+.techno{
+    width: 960px;
+    margin: auto;
+}
+
+.techno .techno-heading{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.product-item{
+    text-align: justify;
+}
+.techno-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 35px;
+}
+.techno .techno-desc .techno-title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.techno .techno-desc p.detail{
+    text-align: justify;
+}
+
+.footer{
+    width: 1000px;
+    margin:auto;
+    padding: 20px 0px 20px 0px;
+    background-color: #2f2f2f;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-gap: 273px;
+}
+.footer .copyright{
+    color: #ffffff;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.link img{
+    width: 35px;
+    margin-right: 15px;
+}

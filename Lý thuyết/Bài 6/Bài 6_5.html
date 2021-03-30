@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 1 - Lab 6</title>
+    <style>
+        body{
+            padding: 0;
+            margin:0;
+            background-image: url("images/poly-pg.jpg");
+            background-size: cover; /*Kéo dãn hình ảnh vừa với khung mà không gây sai tỉ lệ*/
+        }
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .container>header{
+            background-image: url('images/header-bg.jpg');
+            background-size: cover;
+            height: 0;
+            padding-bottom: 25%;
+        }
+        .container>nav{
+            background-color: orangered;
+            line-height: 30px;
+        }
+        .container>article{
+            background-color: green;
+            float: left;
+            width: 75%;
+            min-height: 250px;
+        }
+        .container>aside{
+            background-color: cyan;
+            float: right;
+            width: 25%;
+            min-height: 250px;
+        }
+        .container>footer{
+            background-color: orange;
+            clear: both;
+            height: 50px;
+            border-top: 5px double orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <article>article</article>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.top{
+    display: flex;
+}
+.col1 .col2 .col3{
+    width: 30%;
+    margin-right:3%;
+}
+.top h3{
+    display: inline;
+}
+.top img{
+    float: left;
+}

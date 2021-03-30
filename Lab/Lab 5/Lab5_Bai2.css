@@ -1,0 +1,32 @@
+.column{
+    width: 25%;
+    float: left; /*Phần tử đẩy về bên trái*/
+}
+
+.sanpham{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.sanpham .ten{
+    font-size: 35px;
+    font-variant: small-caps;
+    color: blue;
+}
+
+.sanpham img{
+    max-width: 95%;
+}
+
+.sanpham .gia{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sanpham .gia del{
+    color: gray;
+}

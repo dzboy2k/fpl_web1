@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuộc Tính CSS Thiết Kế Layout</title>
+    <style>
+        /* 
+        Thuộc Tính CSS dùng trong thiết kế Layout:
+            - float: <left hoặc right>: Thả nổi hộp bên trái (left) hoặc bên phải (right)
+            - clear: <left, right hoặc both>: Xóa bỏ chế độ thả nổi bên trái (left), phải (right) hoặc cả 2 bên (both)
+            - Chú ý: Khi thả nổi một hộp thì các hộp tiếp sau sẽ tự động thả nổi theo hướng của hộp trước. Để bỏ thả nổi, phải sử dụng clear. 
+        */
+        .d1, .d2, .d3, .d4{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .d1, .d2, .d3{
+            float: left;
+        }
+        .d4{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3">3</div>
+      <div class="d4">4</div>
+</body>
+</html>

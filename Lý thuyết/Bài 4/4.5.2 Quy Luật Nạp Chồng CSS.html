@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy Luật Nạp Chồng CSS</title>
+    <style>
+        /* 
+        Thứ tự ưu tiên CSS
+            - Inline -> ID selector -> Class Selector -> HTML Selector -> Mặc Định
+            - Định nghĩa sau -> Định nghĩa trước
+            - Sử dụng !important ngay sau mỗi thuộc tính css để thay đổi thứ tự ưu tiên thành cao nhất 
+        */
+        h1{
+            color: red !important;
+            font-variant: small-caps;
+        }
+        .h11{
+            color: blue;
+        }
+        .h12{
+            color: green;
+        }
+        #h13{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h11 h12" id="h13" style="color: magenta;">FPT Polytechnic</h1>
+</body>
+</html>

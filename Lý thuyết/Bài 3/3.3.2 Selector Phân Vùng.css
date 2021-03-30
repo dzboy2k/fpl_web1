@@ -1,0 +1,21 @@
+/* 
+    Selector phân vùng
+    Selector1.Selector2{}: Các thẻ thỏa mãn Seclector1 và Selector2 (1)
+    Selector1 Selector2{}: Các thẻ Seclector2 là hậu duệ của Selector1 (2)
+    Selector1>Selector2{}: Các thẻ Seclector2 là con của Selector1 (3)
+*/
+
+/* (1) */
+h1.red-class{
+    color: red;
+}
+
+/* (2) */
+.blue-class h1{
+    color: blue;
+}
+
+/* (3) */
+.green-class>h1{
+    color: green;
+}

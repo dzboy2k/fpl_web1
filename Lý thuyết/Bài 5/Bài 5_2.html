@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví Dụ Về Padding Và Margin</title>
+    <style>
+        /* 
+        Padding và Margin
+        * Định nghĩa padding cho nhiều phía:
+            - padding: <top:trên> <right:bên phải> <bottom:dưới> <left:bên trái>
+                VD: padding: 5px 7px 9px 11px; 
+            - padding: <top-bottom> <right-left>
+                VD: padding:5px 7px;
+            -padding: <top-right-bottom-left>
+        padding:5px;
+        * Định nghĩa padding riêng lẻ cho từng phía:
+            - padding-top: <top>;
+            - padding-left: <left>;
+            - padding-right: <right>;
+            - padding-bottom: <bottom>;
+        */
+
+        .box{
+            background-color: blue;
+        }
+        .box>img{
+            width: 300px;
+            background-color: red;
+            margin: 10px 30px;
+            border: 5px solid red;
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/web.jpg" alt="">
+    </div>
+</body>
+</html>

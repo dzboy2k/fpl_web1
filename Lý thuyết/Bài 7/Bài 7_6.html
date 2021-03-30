@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 2 - Lab 7</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 200px;
+            height: 150px;
+            display: inline-block;
+        }
+        #d2{
+            position: static;
+            left: 50px;
+            top: 50px;
+        }
+        #d3{
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+        #d4{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+        #d5{
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+        }
+        #d6{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">d1-default</div>
+    <div id="d2">d2-static</div>
+    <div id="d3">d3-relative</div>
+    <div id="d4">d4-absolute</div>
+    <div id="d5">
+        d5-fixed
+        <div id="d6">d6-absolute</div>
+    </div>
+</body>
+</html>

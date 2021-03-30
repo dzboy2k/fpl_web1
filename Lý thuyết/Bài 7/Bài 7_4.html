@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định Vị Tuyệt Đối Theo Thẻ Chứa</title>
+    <style>
+        /* 
+        Muôn định vị tuyệt đối theo thẻ chứa thì 
+            - Định vị thẻ chứa phải khác static
+            - Định vị thẻ chứa phải là absolute
+        */
+        .box1{
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        .box2{
+            width: 100px;
+            height: 50px;
+            border: 1px solid blue;
+            background: yellow;
+
+            position: absolute;
+            bottom: 30px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

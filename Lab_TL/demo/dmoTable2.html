@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #cccccc;
+        } */
+        table{
+            border-collapse: collapse;
+            /* bỏ khoảng cách đường viền giữa các ô */
+        }
+        th, td{
+            border-right: 1px solid #ffffff;
+        }
+        thead tr{
+            background-color: #e26804;
+        }
+        tbody tr{
+            background-color: #ebb991;
+        }
+        tbody tr:last-child{
+            background-color: #5de204;
+        }
+        /* :last-child - chọn vào phần tử cuối cùng  */
+        tbody tr:first-child{
+            background-color: #5de204;
+        }
+        /* :first-child - chọn vào phần tử đầu tiên */
+        tbody tr:nth-child(odd){
+            background-color: #0459e2;
+        }
+        /* 
+            :nth-child() - chọn vào 1 phần tử ở vị trí bất kỳ (vị trí phần tử muốn chọn sẽ nằm trong dấu ()) 
+            nếu muốn chọn tất cả những dòng chẵn thì gõ even(số chẵn) vào dấu ()
+            nếu muốn chọn tất cả những dòng chẵn thì gõ odd(số lẻ) vào dấu ()
+        */
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Tieu de 1</th>
+                <!-- th: định nghĩa 1 ô tiêu đề trong 1 dòng  -->
+                <th colspan="2">Tieu de 2</th>
+                <!-- colspan: gộp 2 cột vào thành 1 ô -->
+            </tr> 
+            <!-- tr: table row - định nghĩa 1 dòng trong table-->
+        </thead>
+        <!-- thead: định nghĩa khối tiêu đề cho 1 table -->
+        <tbody>
+            <tr>
+                <td rowspan="2">Noi dung 1 </td>
+                <!-- gộp 2 dòng vào thành 1 ô -->
+                <!-- td: định nghĩa 1 ô nội dung trong table -->
+                <td>Noi dung 2 </td>
+                <td>Noi dung 3 </td>
+            </tr>
+            <tr>
+                <td>Noi dung 2 </td>
+                <td>Noi dung 3 </td>
+            </tr>
+
+        </tbody>
+        <!-- tbody: định nghĩa khối nội dung cho 1 table -->
+    </table>
+</body>
+</html>

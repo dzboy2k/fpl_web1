@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* c */
+        }
+        body{
+            font-family: Georgia;
+        }
+        .searchInput, .username, .email{
+            background-color: #000000;
+            /* thêm màu nền cho thẻ */
+            border: none;
+            /* xoá đường viền */
+            border-radius: 10px;
+            /* bo góc */
+            width: 220px;
+            /* độ rộng */
+            height: 30px;
+            /* độ cao */
+            padding: 10px;
+            /* khoảng cách từ border đến nội dung */
+            color: #ffffff;
+            /* màu text */
+            outline: none;
+            /* xoá bỏ outline của thẻ */
+        }
+        .btnSearch, .btnSearch2, .submit{
+            background-color: #1896a7;
+            border: none;
+            border-radius: 5px;
+            width: 70px;
+            height: 30px;
+            color: #ffffff;
+        }
+        .footer-form input{
+            display: block;
+            /* thay đổi kiểu hiển thị của thẻ sang block */
+            margin-bottom: 10px;
+            /* thêm khoảng cách xuống thẻ bên dưới  */
+        }
+        .contact{
+            color: #1896a7;
+        }
+        .contact a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Search our website" class="searchInput">
+    <!-- placeholder: thêm chú thích cho thẻ input -->
+    <input type="submit" value="Search" class="btnSearch">
+    <!-- 
+        Value:  text hiển thị của nút (button)
+        type:   kiểu hiển thị của input
+    -->
+    <button class="btnSearch2">Search</button>
+    <!-- tạo 1 nút với text là Search -->
+    <form action="http://gamek.vn/" class="footer-form">
+        <!-- form: thẻ xác định biểu mẫu -->
+        <input type="text" placeholder="Name" class="username">
+        <input type="text" placeholder="Email" class="email">
+        <input type="submit" class="submit">
+    </form>
+    <input type="radio">
+    <input type="checkbox"> <label for="">Nam</label>
+    <input type="checkbox"> <label for="">Nu</label>
+    <input type="date">
+    <input type="range">
+    <input type="file">
+    <input type="password">
+    <p>Email: <span class="contact"><a href="">contact@mydomain.com</a> </span></p>
+</body>
+</html>

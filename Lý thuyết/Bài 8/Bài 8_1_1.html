@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết Kế Menu Đứng</title>
+    <style>
+        ul.vmenu{
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px orangered;
+        }
+        ul.vmenu>li>a{
+            display: block;
+            line-height: 30px;
+            border-bottom: 1px dotted orangered;
+            text-decoration: none;
+            font-variant: small-caps;
+            color: orangered;
+            padding-left: 25px;
+            background: url(images/b1.jpg) no-repeat left center;
+            background-size: 20px 20px;
+        }
+        ul.vmenu>li>a:hover{
+            background: url(images/b2.jpg) no-repeat left center;
+            background-size: 20px 20px;
+            font-weight: bolder;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Thiết kế Menu
+            Menu đứng và ngang được thiết kế nhờ sự kết hợp bởi
+                - Danh sách không thứ tự
+                - Liên Kết
+                - CSS
+     -->
+     <!-- 
+         Thiết kế menu đứng
+            Menu
+                - Bo góc
+                - Bóng
+            Menu Item (liên kết)
+                - Ảnh nền không lặp
+                - Chữ hoa nhỏ
+                - Màu cam đậm
+                - Chiều cao
+                - Đường kẻ lưới
+            Menu Item Hover
+                - Đổi ảnh nền
+                - Màu đỏ
+                - In đậm
+      -->
+
+      <ul class="vmenu">
+          <li><a href="#1">Hàng bán chạy</a></li>
+          <li><a href="#2">Hàng yêu thích</a></li>
+          <li><a href="#3">Hàng mới</a></li>
+          <li><a href="#4">Hàng đặc biệt</a></li>
+          <li><a href="#5">Hàng giảm giá</a></li>
+      </ul>
+</body>
+</html>

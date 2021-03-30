@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví Dụ Về Bo Góc</title>
+    <style>
+        /* 
+        Border-Radius
+        - Bo tròn 4 góc cùng lúc: 
+            + border-radius:<top-left> <top-right> <bottom-right> <bottom-left>: Bo cả bốn góc với bán kính các góc khác nhau
+            + border-radius:<top-left> <top-right> <bottom-right>: Bo cả bốn góc. Trong đó <bottom-left> giống góc đối diện <top-right> 
+            + border-radius:<top-left> <top-right>:Bo cả bốn góc. Trong đó <bottom-left>, <bottom-right> giống góc đối diện <top-right>, <top-left>
+            + border-radius:<top-left>: Bo cả bốn góc với bán kính các góc là <top-left>
+
+        - Bo tròn từng góc riêng lẻ
+            + border-top-left-radius: <top-left>: Bo góc trên bên trái
+            + border-top-right-radius: <top-right>: Bo góc trên bên phải
+            + border-bottom-right-radius: <bottom-right>: Bo góc dưới bên phải
+            + border-bottom-left-radius: <bottom-left>: Bo góc dưới bên trái
+            VD:
+                border-top-left-radius:20px;
+                border-bottom-right-radius:20px;
+        */
+        
+        img.radius1{
+            width: 200px;
+            border:  1px solid red;
+            border-radius: 10px 20px 30px 40px;
+        }
+        img.radius2{
+            width: 200px;
+            border:  1px solid red;
+            border-radius: 10px 20px 30px;
+        }
+        img.radius3{
+            width: 200px;
+            border:  1px solid red;
+            border-radius: 10px 20px;
+        }
+        img.radius4{
+            width: 200px;
+            border:  1px solid red;
+            border-radius: 10px;
+        }
+        img.radius5{
+            width: 200px;
+            border:  1px solid red;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/web.jpg" alt="" class="radius1">
+    <img src="images/web.jpg" alt="" class="radius2">
+    <img src="images/web.jpg" alt="" class="radius3">
+    <img src="images/web.jpg" alt="" class="radius4">
+    <img src="images/web.jpg" alt="" class="radius5">
+</body>
+</html>
